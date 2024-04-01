@@ -3,8 +3,7 @@ name: Release Notification
 on:
   workflow_run:
     workflows: ["Release To NuGet"]
-    types:
-     - [in_progress]
+    types: [in_progress]
 
 jobs:
   send-slack-notification:
